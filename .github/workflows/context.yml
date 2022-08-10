@@ -11,6 +11,7 @@ jobs:
           echo ${{startsWith ('hello', 'he')}}
           echo ${{ endsWith('hello', 'lo')}}
           echo ${{ format('Hello {0}{1}{2}', 'World', '!', '!')}}
+        timeoutout-minutes: 0 
   one:
     runs-on: ubuntu-latest
     if: github.event_name=='push'
