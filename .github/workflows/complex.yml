@@ -20,7 +20,7 @@ jobs:
 
 
   depends:
-    needs:[Ubuntu, windows, macos]
+    needs: [Ubuntu, windows, macos]
     runs-on: macos-latest 
     steps: 
     - run: date 
